@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EPUP6MzupbQv2wxRBD8KEbPbCFdPVNdAx8BEpmeoadwXYGJ0cYCSBbvWinR5YvlqPtkjLc2T0VzGhZBh+/N5Ug==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\C#\\JadeGo\\JadeGo\\JadeGo\\JadeGo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Harri Ahola\\.nuget\\packages\\microsoft.web.webview2\\1.0.1245.22\\microsoft.web.webview2.1.0.1245.22.nupkg.sha512",
+    "C:\\Users\\Harri Ahola\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

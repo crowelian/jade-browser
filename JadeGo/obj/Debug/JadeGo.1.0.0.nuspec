@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>JadeGo</id>
+    <version>1.0.0</version>
+    <authors>JadeGo</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="Microsoft.Web.WebView2" version="1.0.1245.22" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Debug\net5.0-windows\JadeGo.runtimeconfig.json" target="lib\net5.0-windows7.0\JadeGo.runtimeconfig.json" />
+    <file src="D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Debug\net5.0-windows\JadeGo.dll" target="lib\net5.0-windows7.0\JadeGo.dll" />
+  </files>
+</package>

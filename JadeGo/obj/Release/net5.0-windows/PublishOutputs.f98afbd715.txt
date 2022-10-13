@@ -1,0 +1,11 @@
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\JadeGo.exe
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\runtimes\win-x86\native\WebView2Loader.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\runtimes\win-x64\native\WebView2Loader.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\JadeGo.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\JadeGo.deps.json
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\JadeGo.runtimeconfig.json
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\JadeGo.pdb
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\Microsoft.Web.WebView2.Core.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\Microsoft.Web.WebView2.WinForms.dll
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\publish\Microsoft.Web.WebView2.Wpf.dll

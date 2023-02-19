@@ -1,7 +1,7 @@
 ﻿
 namespace JadeGo
 {
-    partial class Form1
+    partial class TheBrowser
     {
         /// <summary>
         ///  Required designer variable.
@@ -163,7 +163,7 @@ namespace JadeGo
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(96, 9);
             this.textBox1.Name = "textBox1";
@@ -188,8 +188,8 @@ namespace JadeGo
             // webViewMain
             // 
             this.webViewMain.AllowExternalDrop = true;
-            this.webViewMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.webViewMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.webViewMain.CreationProperties = null;
             this.webViewMain.DefaultBackgroundColor = System.Drawing.Color.Black;
@@ -248,7 +248,7 @@ namespace JadeGo
             this.Reload_Anim_label.TabIndex = 7;
             this.Reload_Anim_label.Text = "↻";
             // 
-            // Form1
+            // TheBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,7 +262,7 @@ namespace JadeGo
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "TheBrowser";
             this.Text = "JadeGo";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

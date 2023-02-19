@@ -4,7 +4,7 @@
     <_LastSelectedProfileId>D:\Projects\C#\JadeGo\JadeGo\JadeGo\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Form1.cs">
+    <Compile Update="TheBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

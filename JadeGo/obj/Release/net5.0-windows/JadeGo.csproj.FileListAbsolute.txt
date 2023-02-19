@@ -12,7 +12,7 @@ D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\Microsoft.Web.Web
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\bin\Release\net5.0-windows\Microsoft.Web.WebView2.Wpf.dll
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.csproj.AssemblyReference.cache
-D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.Form1.resources
+D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.TheBrowser.resources
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.csproj.GenerateResource.cache
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\C#\JadeGo\JadeGo\JadeGo\obj\Release\net5.0-windows\JadeGo.AssemblyInfoInputs.cache

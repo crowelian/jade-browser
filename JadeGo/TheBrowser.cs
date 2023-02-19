@@ -7,7 +7,7 @@ using Microsoft.Web.WebView2.Core;
 
 namespace JadeGo
 {
-    public partial class Form1 : Form
+    public partial class TheBrowser : Form
     {
         private bool allowHttpPages = false;
         private enum SearchEngine
@@ -41,11 +41,11 @@ namespace JadeGo
         }
 
 
-        public Form1()
+        public TheBrowser()
         {
             InitializeComponent();
             this.Resize += new System.EventHandler(this.Form_Resize);
-            
+
             InitializeAsync();
 
             ReadWriteINIfile("./config.ini");
@@ -58,7 +58,7 @@ namespace JadeGo
             Reload_Anim_label.Hide();
 
             selectedSearchEngine = (SearchEngine)Enum.Parse(typeof(SearchEngine), engineFromIni);
-            selectSearchEngineToolStripMenuItem.Text = "Search Engine ("+engineFromIni+")";
+            selectSearchEngineToolStripMenuItem.Text = "Search Engine (" + engineFromIni + ")";
             toolStripMenuItem3.Text = (webViewMain.ZoomFactor * 100).ToString();
         }
 
@@ -67,8 +67,6 @@ namespace JadeGo
         private void Form_Resize(object sender, EventArgs e)
         {
             webViewMain.Size = this.ClientSize - new System.Drawing.Size(webViewMain.Location);
-            //goButton.Left = this.ClientSize.Width - goButton.Width;
-            //addressBar.Width = goButton.Left - addressBar.Left;
         }
 
         async void InitializeAsync()
@@ -77,7 +75,6 @@ namespace JadeGo
             webViewMain.CoreWebView2.WebMessageReceived += UpdateAddressBar;
 
             await webViewMain.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
-            //await webViewMain.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
         }
 
         void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
@@ -89,7 +86,7 @@ namespace JadeGo
 
         public void Navigate(string url)
         {
-            //MessageBox.Show("GO to " + url);
+
             if (webViewMain != null && webViewMain.CoreWebView2 != null)
             {
                 var rawUrl = url;
@@ -111,29 +108,31 @@ namespace JadeGo
                     {
                         uri = new Uri("https://bing.com/search?q=" +
                         String.Join("+", Uri.EscapeDataString(rawUrl).Split(new string[] { "%20" }, StringSplitOptions.RemoveEmptyEntries)));
-                    } else if (selectedSearchEngine == SearchEngine.DuckDuckGo)
+                    }
+                    else if (selectedSearchEngine == SearchEngine.DuckDuckGo)
                     {
                         uri = new Uri("https://duckduckgo.com/?q=" +
                         String.Join("+", Uri.EscapeDataString(rawUrl).Split(new string[] { "%20" }, StringSplitOptions.RemoveEmptyEntries)));
-                    } else
+                    }
+                    else
                     {
                         uri = new Uri("https://google.com/search?q=" +
                         String.Join("+", Uri.EscapeDataString(rawUrl).Split(new string[] { "%20" }, StringSplitOptions.RemoveEmptyEntries)));
                     }
-                    
-                    
+
+
                 }
-                
-                //MessageBox.Show("GO to " + uri.ToString());
+
                 if (FixEnsureHttps(uri.ToString()))
                 {
                     webViewMain.CoreWebView2.Navigate(uri.ToString());
-                } else
+                }
+                else
                 {
                     webViewMain.CoreWebView2.ExecuteScriptAsync($"alert('{url} is not an url')");
 
                 }
-                
+
             }
         }
 
@@ -168,13 +167,14 @@ namespace JadeGo
                     webViewMain.CoreWebView2.ExecuteScriptAsync($"alert('{uri} is not safe, try an https link')");
                     args.Cancel = true;
                 }
-                
+
             }
         }
 
         bool FixEnsureHttps(string url)
         {
-            if (url.StartsWith("https://") || url.StartsWith("http://")) {
+            if (url.StartsWith("https://") || url.StartsWith("http://"))
+            {
                 return true;
             }
             return false;
@@ -244,12 +244,12 @@ namespace JadeGo
         {
             Reload_Anim_label.Hide();
             refresh.Show();
-            
+
         }
 
         private void webViewMain_CoreWebView2InitializationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs e)
         {
-            //MessageBox.Show("DEBUG: the webview is ready!");
+            // The webview is ready...
         }
 
         private void allowHttpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -259,7 +259,8 @@ namespace JadeGo
                 allowHttpToolStripMenuItem.Text = "Allow Http";
                 allowHttpPages = false;
                 allowHttpToolStripMenuItem.ForeColor = Color.DarkGreen;
-            } else
+            }
+            else
             {
                 allowHttpPages = true;
                 allowHttpToolStripMenuItem.Text = "Disallow http";
